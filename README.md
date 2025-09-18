@@ -11,12 +11,14 @@ This repository consists of two main directories:
 - ***analysis*** which is where all the plots and packet analysis is done  
 
 ## Filename structure
-The pcap files, and their respective pdf plots have the following structure:  
+**The following rules hold true from after 18.09.25**    
 
+The pcap files, and their respective pdf plots have the following structure:  
 [kernel_version]\_[CC algorithm]_[topology]_[iperf duration]s.pcap  
 
-***for example:***
+***for example:***  
 6.12.1022_reno_topology1_60s.pcap  
+
 Which means: 
 - Kernel version used is 6.12.1022, note that 6.12.10 is the base linux version used, and 6.12.10(*)  
 represents a custom implementation based on the 6.12.10 source code.  
@@ -26,7 +28,7 @@ to the topology found in /mininet/topologies/topology1
 - The iperf test was run for 60 seconds
 
 ## Commit message structure  
-All commit messages (after 18.09.25) related to experiments run with a specific kernel version, should  
+All commit messages related to experiments run with a specific kernel version, should  
 be prefixed with the kernel version. For example:  
 ***git commit -m "6.12.1017 run iperf simulation for 30 seconds"***
 We then know which kernel version each commit belongs to.  
