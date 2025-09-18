@@ -14,7 +14,7 @@ This repository consists of two main directories:
 **The following rules hold true from after 18.09.25**    
 
 The pcap files, and their respective pdf plots have the following structure:  
-[kernel_version]\_[CC algorithm]_[topology]_[iperf duration]s.pcap  
+[kernel_version]\_[CC algorithm]\_[topology]\_[iperf duration]s.pcap  
 
 ***for example:***  
 6.12.1022_reno_topology1_60s.pcap  
